@@ -4,6 +4,9 @@
 # 3. The total number of votes each candidate won
 # 4. The percentage of votes each candidate won
 # 5. The winner of the election based on popular vote
+# 6. The voter turnout for each county
+# 7. The percentage of votes from each county out of the total count
+# 8. The county with the highest turnout
 
 # Import csv module
 import csv
@@ -13,7 +16,7 @@ import os
 file_to_load = os.path.join("Resources", "election_results.csv")
 
 # Create a filename variable to save the file to a path
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+file_to_save = os.path.join("analysis", "election_results.txt")
 
 #Put here so everytime we run the file, total_votes variable is set to zero
 total_votes = 0
