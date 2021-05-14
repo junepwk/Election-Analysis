@@ -57,6 +57,18 @@ with open(file_to_load) as election_data:
         #increment each candidate's vote by 1 every time a candidate name appears in a row
         candidate_votes[candidate_name] += 1
 
+#Save results to our text file
+with open(file_to_save, "w") as txt_file:
+
+    election_results = (f'\nElection Results\n'
+                        f'---------------------------\n'
+                        f'Total Votes: {total_votes:,}\n'
+                        f'---------------------------\n')
+
+    print(election_results, end ="")
+
+    txt_file.write(election_results)
+
     #Determine the percentage of votes for each candidate by looping through the counts
     #1. iterate through the candidate list
     for candidate_name in candidate_votes:
@@ -79,14 +91,20 @@ with open(file_to_load) as election_data:
             winning_candidate = candidate_name
 
 
-        print(f'{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n')
-   
+        candidate_results = (f'{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n')
+
+        print(candidate_results)
+
+        #save the candidate results to our text file
+        txt_file.write(candidate_results)
+    
     winning_candidate_summary = (
-        f"-------------------------\n"
-        f"Winner: {winning_candidate}\n"
-        f"Winning Vote Count: {winning_count:,}\n"
-        f"Winning Percentage: {winning_percentage:.1f}%\n"
-        f"-------------------------\n")
+            f"-------------------------\n"
+            f"Winner: {winning_candidate}\n"
+            f"Winning Vote Count: {winning_count:,}\n"
+            f"Winning Percentage: {winning_percentage:.1f}%\n"
+            f"-------------------------\n")
     print(winning_candidate_summary)
         
-   
+    #save the winning candidate's name to the text file
+    txt_file.write(winning_candidate_summary)
