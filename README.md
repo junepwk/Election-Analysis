@@ -43,3 +43,15 @@ The analysis of the election show that:
 
 
 ## Election Audit Summary
+The core of this script could be applied to not only the US congressional state precinct elections, but also larger scale elections like the Electoral College.  This would require a prodigious refactoring of the original script.  Similar to the lists and dictionaries created to store candidate and county informations, adding a list and dictionary to store states' information would broaden the code's capability for future use.  Additionally, the same steps could be done for each political parties.  By building onto the ordered steps in the original script, the possibilites are endless.
+
+```Python
+#Example codes that could be utilized
+#Create a state list and state vote dictionary
+state_list = []
+state_votes = {}
+
+#Track the winning elector and vote count
+winning_elector = ""
+electoral_votes = 0
+```
