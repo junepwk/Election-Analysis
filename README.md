@@ -59,6 +59,8 @@ The analysis of the election show that:
 * The winner of the election was: 
    * **Diana DeGette**, who received 73.8% of the vote and 272,892 number of votes.
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Election Audit Summary
 The core of this script could be applied to not only the US congressional state precinct elections, but also larger scale elections like the Electoral College.  This would require a prodigious refactoring of the original script.  Similar to the lists and dictionaries created to store candidate and county informations, adding a list and dictionary to store states' information would broaden the code's capability for future use.  Additionally, the same steps could be done for each political parties.  By building onto the ordered steps in the original script, the possibilites are endless.
@@ -73,3 +75,4 @@ state_votes = {}
 winning_elector = ""
 electoral_votes = 0
 ```
+<p align="right">(<a href="#top">back to top</a>)</p>
