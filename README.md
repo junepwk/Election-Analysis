@@ -1,6 +1,24 @@
 # PyPoll with Python
 
-## Overview of Election Audit
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#overview-of-project">Overview of Project</a>
+    </li>
+    <li>
+      <a href="#resources">Resources</a>
+    </li>
+    <li>
+       <a href="#election-audit-results">Election Audit Results</a>
+    </li>
+    <li>
+       <a href="#election-audit-summary">Election Audit Summary</a>
+    </li>
+  </ol>
+</details>
+
+## Overview of Project
 Tom, an employee of Colorado Board of Elections, had requested the following data for an election audit analysis:
 1. Total number of votes casted
 2. A complete list of candidates who received votes
